@@ -51,6 +51,7 @@ nav ul li a{
     text-align: center;*/
     display: flex;
     justify-content: center;
+    transition: all 0.5s ease;
 }
 
 nav ul li a:hover{
@@ -191,18 +192,64 @@ h2{
 }
 
 .formulario p{
-    display: flex; /*se acomodan los elementos uno al lado del otro*/
+    display: flex;
 }
 
 .formulario p input,
 .formulario p textarea{
-    width: 80%;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding:6px 10px ;
 }
 
 .formulario p label{
-    width: 70px;
+    min-width: 80px;
     background-color: yellow;
-    display: block;
+    display: flex;
+    align-items: center;
 }
+
+.formulario textarea{
+    height: 150px;
+    resize: none;
+}
+
+/*.formulario p label.arriba{
+    align-items: start;
+}*/
+
+.formulario p:nth-child(4){
+    align-items: start;
+}
+/*
+nth-child(even): par
+nth-child(odd): inpar
+nth-child(4): por numero/ubicasion en fila
+nth-child(5n): reprecenta cada tantos numeros (5,10,15)etc.
+*/
+/*Ejemplo*/
+.persona:nth-child(odd){
+    background-color: violet;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    width: auto;
+    cursor: pointer;
+    /*margin-left: 80px;*/
+    position: relative;
+    left: 80px;
+    transition: all 0.8s ease;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
 
 /*din Contacto*/
