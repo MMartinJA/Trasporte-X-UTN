@@ -82,14 +82,17 @@ h2{
 .columnas{
     display: flex;
     gap: 20px;
+    
 }
 
 .bienvenidos{
     width: 75%;
+    /*padding-right: 20px;*/
     /*background-color: yellow;*/
 }
 
 .testimonios{
+    /*background-color: orange;*/
     width: 25%;
     /*background-color: orange;*/
 }
@@ -104,9 +107,10 @@ h2{
     font-size: 20px;
     /*background-color: yellow;*/
     font-style: italic;
-    /*display: block;*/
-    display: flex;
+    display: block;
+    /*display: flex;*/
 }
+
 
 .testimonio .autor{
     font-size: 12px;
