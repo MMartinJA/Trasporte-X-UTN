@@ -70,7 +70,7 @@ footer{
 }
 
 .holder{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     /*background-color: orange;*/
 }
@@ -78,6 +78,10 @@ footer{
 h2{
     color: #2e64a1;
     font-weight: 400;
+}
+
+.homeimg img{
+    max-width: 100%;
 }
 
 .columnas{
@@ -253,3 +257,30 @@ nth-child(5n): reprecenta cada tantos numeros (5,10,15)etc.
 
 
 /*din Contacto*/
+
+@media screen and (max-width:768px){
+    .holder{
+        padding: 0 10px;
+    }
+
+    nav ul.holder{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:550px){
+
+    .columnas{
+        flex-direction: column;
+    }
+
+    .bienvenidos,
+    .testimonios{
+        width: 100%;
+    }
+    .testimonio{
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+}
