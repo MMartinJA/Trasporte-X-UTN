@@ -282,5 +282,45 @@ nth-child(5n): reprecenta cada tantos numeros (5,10,15)etc.
         max-width: 220px;
         margin: 0 auto;
     }
+    .personas{
+    flex-wrap: wrap;
+    }
+    .persona{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    header .holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .logo img{
+        max-width: 80px;
+    }
+    header h1{
+        position: static;
+    }
+    nav ul.holder{
+        flex-direction: column;
+        /*padding: 0;
+        margin: 0;*/
+    }
+
+}
+
+@media screen and (max-width:320px){
+    header .holder{
+        flex-direction: column;
+    }
+    header .logo img{
+        max-width: 60px;
+    }
+    header h1{
+        margin: 10px;
+        font-size: 20px;
+    }
 
 }
